@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>乐队主页</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/mycss.css"/>
+    <script src="./js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=QxY4luFnuGVvKxcFDoxqneafXyGBGepZ" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+      <div id="home" class="cotainer">
+       <div class="row">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand"><img src="./img/微信图片_20200626113156.jpg" alt="" class="img-responsive" width="100"/></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home">主页</a></li>
+                    <li><a href="#band">成员</a></li>
+                    <li><a href="#tour">巡演</a></li>
+                    <li><a href="#contact">联系</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        更多<span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="">单曲</a></li>
+                        <li><a href="">专辑</a></li>
+                      </ul>
+                    </li>
+                    <li class="last"><a href=""><span class="glyphicon glyphicon-search"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          
+          <!-- wrapper for slide -->
+          
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="./img/微信图片_20200626113156.jpg" >
+              <div class="carousel-caption">
+                <h3>北京</h3>
+                <p>北京久等了！</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./img/微信图片_20200626113156.jpg" >
+              <div class="carousel-caption">
+                <h3>上海</h3>
+                <p>一个难忘的夜晚！</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./img/微信图片_20200626113156.jpg" >
+              <div class="carousel-caption">
+                <h3>武汉</h3>
+                <p>越听，越想走路回青春！</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- left and right controls -->
+          
+          <a href="#myCarousel" data-slide="prev" class="left carousel-control">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a href="#myCarousel" data-slide="next" class="right carousel-control">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="container text-center" id="band">
+        <h3>我们的成员</h3>
+        <p><em>我们爱音乐！</em></p>
+        <p>XX乐队由一群热爱音乐的年轻人组成。成立两年来，已经成为校园炙手可热的新生代摇滚......</p>
+        <div class="row">
+          <div class="col-sm-4">
+            <p class="text-center"><strong>Susan</strong></p><br>
+            <a href="#demo1" data-toggle="collapse">
+              <img src="./img/cache.png" alt="" class="img-circle person">
+            </a>
+            <div id="demo1" class="collapse">
+              <p>主唱</p>
+              <p>1987-10-23，湖北武汉人</p>
+              <p>擅长动人的抒情歌曲，喜欢RB,POP等风格</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <p class="text-center"><strong>Tom</strong></p><br>
+            <a href="#demo2" data-toggle="collapse">
+              <img src="./img/timg.png" alt="" class="img-circle person">
+            </a>
+            <div id="demo2" class="collapse">
+              <p>主唱</p>
+              <p>1987-10-23，湖北武汉人</p>
+              <p>擅长动人的抒情歌曲，喜欢RB,POP等风格</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <p class="text-center"><strong>Peter</strong></p><br>
+            <a href="#demo3" data-toggle="collapse">
+              <img src="./img/cache.png" alt="" class="img-circle person">
+            </a>
+            <div id="demo3" class="collapse">
+              <p>主唱</p>
+              <p>1987-10-23，湖北武汉人</p>
+              <p>擅长动人的抒情歌曲，喜欢RB,POP等风格</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="bg-1">
+        <div class="container" id="tour">
+          <h3 class="text-center">巡演日期</h3>
+          <p class="text-center">我们将会演绎自己的音乐。<br>快点来购票吧！</p>
+          <ul class="list-group">
+            <li class="list-group-item">September <span class="label label-danger">售完！</span></li>
+            <li class="list-group-item">October <span class="label label-danger">售完！</span></li>
+            <li class="list-group-item">November <span class="badge">3</span></li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="./img/微信图片_20200626113156.jpg" >
+                <p>北京</p>
+                <p>Sat. 28 November 2017</p>
+                <button class="btn" data-toggle="modal" data-target="#myModal">购票</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="./img/微信图片_20200626113156.jpg" >
+                <p><strong>上海</strong></p>
+                <p>Sat. 29 November 2017</p>
+                <button class="btn" data-toggle="modal" data-target="#myModal">购票</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="./img/微信图片_20200626113156.jpg">
+                <p><strong>武汉</strong></p>
+                <p>Sat. 27 November 2017</p>
+                <button class="btn" data-toggle="modal" data-target="#myModal">购票</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times;</button>
+              <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="psw">
+                    <span class="glyphicon glyphicon-shopping-cart"></span> Tickets, 每人23元
+                  </label>
+                  <input type="number" class="form-control" id="psw" placeholder="How much?">
+                </div>
+                <div class="form-group">
+                  <label for="username"><span class="glyphicon glyphicon-user"></span> 发送</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter email">
+                </div>
+                <button class="btn btn-block" type="submit">
+                  支付
+                  <span class="glyphicon glyphicon-ok"></span>
+                </button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove"></span> 取消
+              </button>
+              <p>需要 <a href="#">帮助？</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container" id="contact">
+        <h3 class="text-center">联系我们</h3>
+        <p class="text-center"><em>我们热爱我们的粉丝！</em></p>
+        <div class="row">
+          <div class="col-md-4">
+            <p>喜欢我们，就给我们留言吧</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> 武汉，中国</p>
+            <p><span class="glyphicon glyphicon-phone"></span> 电话：<code>+00 15151515151</code></p>
+            <p><span class="glyphicon glyphicon-envelope"></span> 邮箱地址：<a href="">mail@mail.com</a></p>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <textarea rows="5" class="form-control" id="comments" name="comments" placeholder="Comment"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button class="btn pull-right" type="submit">发送</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="baiduMap"></div>
+        <footer class="text-center">
+          <a href="#myPage" class="up-arrow" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+          <br>
+          <p><img src="./img/微信图片_20200626113156.jpg" alt="" width="120"></p>
+        </footer>
+        <script type="text/javascript">
+          var map = new BMapGL.Map("baiduMap"); //创建Map实例
+          map.centerAndZoom(new BMapGL.Point(114.309531, 30.59619), 50);
+          // 初始化地图，设置中心坐标和地图级别
+          map.addControl(new BMapGL.MapTypeControl());  //添加地图类型控件
+          map.enableScrollWheelZoom(true);  //开启鼠标滚动播放
+        </script>
+      </div>
+      
+      <script type="text/javascript">
+        $(function() {
+          $('[data-toggle="tooltip"]').tooltip();
+          // 增加平滑滚动效果到所有链接上
+          $(".navbar a, footer a").on('click', function(event) {
+            event.preventDefault();
+            var hash = this.hash;
+            // 用animate()方法增加滚动效果
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function() {
+              window.location.hash = hash
+            })
+          })
+        })
+      </script>
+  </body>
+</html>
